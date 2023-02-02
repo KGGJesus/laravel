@@ -1,6 +1,6 @@
 <?php
 
-use app\Http\Controllers\BookController;
+use App\Http\Controllers\BookController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +14,7 @@ use app\Http\Controllers\BookController;
 */
 
 Route::get('/books',[BookController::class, 'index']);
-Route::get('/books/{id}', [BookController::class, 'show']);
+Route::get('/books/{id}',[BookController::class, 'show']);
 
 
 
